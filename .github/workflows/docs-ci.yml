@@ -44,7 +44,7 @@ jobs:
       - name: Install dependencies
         run: |
           pip install --upgrade pip
-          pip install mkdocs-material mkdocs-minify-plugin mkdocs-redirects
+          pip install -r requirements.txt
 
       - name: Build MkDocs site
         run: mkdocs build --strict
@@ -73,7 +73,7 @@ jobs:
       - name: Install dependencies
         run: |
           pip install --upgrade pip
-          pip install mkdocs-material mkdocs-minify-plugin mkdocs-redirects
+          pip install -r requirements.txt
 
       - name: Build site for link checking
         run: mkdocs build --strict
@@ -115,7 +115,7 @@ jobs:
       - name: Install dependencies
         run: |
           pip install --upgrade pip
-          pip install mkdocs-material mkdocs-minify-plugin mkdocs-redirects
+          pip install -r requirements.txt
 
       - name: Build documentation
         run: mkdocs build --strict
