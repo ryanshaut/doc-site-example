@@ -1,6 +1,6 @@
 site_name: Nexus CMDB Documentation
 site_description: Enterprise Configuration Management Database for modern infrastructure
-site_url: https://nexus-cmdb.io
+site_url: https://ryanshaut.github.io/doc-site-example/
 repo_url: https://github.com/ryanshaut/doc-site-example
 repo_name: ryanshaut/doc-site-example
 edit_uri: edit/main/docs/

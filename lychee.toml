@@ -18,21 +18,12 @@ max_retries = 3
 
 # Exclude patterns - URLs that don't exist yet or are placeholders
 exclude = [
-    # Placeholder/example domains
-    "example.com",
-    "yourapp.com",
-    "staging-cmdb.example.com",
-    "api.example.com",
-    "docs.example.com",
-    "github.com/example",
-
     # Local URLs
     "localhost",
     "127.0.0.1",
 
     # Unpublished/not-yet-live URLs
     "nexus-cmdb.slack.com",
-    "docs.nexus-cmdb.io",
     "hub.docker.com/r/nexus/cmdb",
     "nexus-cmdb.io",
 
