@@ -16,15 +16,6 @@ timeout = 30
 # Maximum number of retries per request
 max_retries = 3
 
-# Verbose output
-verbose = true
-
-# Don't show progress bar (better for CI)
-no_progress = true
-
-# Exclude email addresses
-exclude_mail = true
-
 # Exclude patterns - URLs that don't exist yet or are placeholders
 exclude = [
     # Placeholder/example domains

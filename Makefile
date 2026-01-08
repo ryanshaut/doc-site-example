@@ -103,7 +103,7 @@ link-check:
 		echo "[ERROR] lychee not installed. Run: make install-lychee"; \
 		exit 1; \
 	fi; \
-	$$LYCHEE --config lychee.toml site/ && echo "[OK] Link checking passed"
+	$$LYCHEE --config lychee.toml --verbose --no-progress --exclude-mail site/ && echo "[OK] Link checking passed"
 
 # Run all CI checks in sequence
 check: lint build link-check

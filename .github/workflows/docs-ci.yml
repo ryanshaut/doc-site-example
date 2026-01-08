@@ -81,7 +81,7 @@ jobs:
       - name: Run link checker
         uses: lycheeverse/lychee-action@v2.0.2
         with:
-          args: --config lychee.toml site/
+          args: --config lychee.toml --verbose --no-progress --exclude-mail site/
           fail: true
 
   deploy:
