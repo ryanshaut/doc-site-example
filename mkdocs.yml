@@ -1,0 +1,144 @@
+site_name: Nexus CMDB Documentation
+site_description: Enterprise Configuration Management Database for modern infrastructure
+site_url: https://nexus-cmdb.io
+repo_url: https://github.com/ryanshaut/doc-site-example
+repo_name: ryanshaut/doc-site-example
+edit_uri: edit/main/docs/
+
+theme:
+  name: material
+  palette:
+    # Light mode
+    - media: "(prefers-color-scheme: light)"
+      scheme: default
+      primary: indigo
+      accent: indigo
+      toggle:
+        icon: material/brightness-7
+        name: Switch to dark mode
+    # Dark mode
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      primary: indigo
+      accent: indigo
+      toggle:
+        icon: material/brightness-4
+        name: Switch to light mode
+  font:
+    text: Roboto
+    code: Roboto Mono
+  features:
+    - navigation.instant
+    - navigation.tracking
+    - navigation.tabs
+    - navigation.tabs.sticky
+    - navigation.sections
+    - navigation.expand
+    - navigation.indexes
+    - navigation.top
+    - search.suggest
+    - search.highlight
+    - search.share
+    - content.code.copy
+    - content.code.annotate
+    - content.tabs.link
+
+markdown_extensions:
+  - abbr
+  - admonition
+  - attr_list
+  - def_list
+  - footnotes
+  - md_in_html
+  - toc:
+      permalink: true
+  - pymdownx.arithmatex:
+      generic: true
+  - pymdownx.betterem:
+      smart_enable: all
+  - pymdownx.caret
+  - pymdownx.details
+  - pymdownx.emoji:
+      emoji_index: !!python/name:material.extensions.emoji.twemoji
+      emoji_generator: !!python/name:material.extensions.emoji.to_svg
+  - pymdownx.highlight:
+      anchor_linenums: true
+      line_spans: __span
+      pygments_lang_class: true
+  - pymdownx.inlinehilite
+  - pymdownx.keys
+  - pymdownx.mark
+  - pymdownx.smartsymbols
+  - pymdownx.superfences:
+      custom_fences:
+        - name: mermaid
+          class: mermaid
+          format: !!python/name:pymdownx.superfences.fence_code_format
+  - pymdownx.tabbed:
+      alternate_style: true
+  - pymdownx.tasklist:
+      custom_checkbox: true
+  - pymdownx.tilde
+
+plugins:
+  - search:
+      lang: en
+      separator: '[\s\-,:!=\[\]()"/]+|(?!\b)(?=[A-Z][a-z])|\.(?!\d)|&[lg]t;'
+  - minify:
+      minify_html: true
+
+extra:
+  version:
+    provider: mike
+  social:
+    - icon: fontawesome/brands/github
+      link: https://github.com/ryanshaut/doc-site-example
+    - icon: fontawesome/brands/docker
+      link: https://hub.docker.com/r/nexus/cmdb
+  analytics:
+    feedback:
+      title: Was this page helpful?
+      ratings:
+        - icon: material/emoticon-happy-outline
+          name: This page was helpful
+          data: 1
+          note: >-
+            Thanks for your feedback!
+        - icon: material/emoticon-sad-outline
+          name: This page could be improved
+          data: 0
+          note: >-
+            Thanks for your feedback! Help us improve by
+            <a href="https://github.com/ryanshaut/doc-site-example/issues/new" target="_blank" rel="noopener">opening an issue</a>.
+
+nav:
+  - Home: index.md
+  - Tutorials:
+      - tutorials/index.md
+      - Getting Started: tutorials/first-ci.md
+      - Modeling Infrastructure: tutorials/modeling-infrastructure.md
+      - Importing CSV Data: tutorials/importing-csv-data.md
+      - Advanced Relationships: tutorials/advanced-relationships.md
+  - How-To Guides:
+      - how-to/index.md
+      - Fixing Duplicate CIs: how-to/fix-duplicate-cis.md
+      - Renaming CI Classes: how-to/rename-ci-class.md
+      - Handling Orphaned Relationships: how-to/handle-orphaned-relationships.md
+      - Migrating Naming Conventions: how-to/migrate-naming-conventions.md
+      - Batch Operations: how-to/batch-operations.md
+  - Discussions:
+      - discussions/index.md
+      - Why Relationship Modeling Matters: discussions/relationship-modeling.md
+      - Schema Flexibility vs Strictness: discussions/schema-tradeoffs.md
+      - CMDB Anti-Patterns: discussions/anti-patterns.md
+      - Design Philosophy: discussions/design-philosophy.md
+  - Reference:
+      - reference/index.md
+      - CI Classes: reference/ci-classes.md
+      - Attribute Types: reference/attribute-types.md
+      - Relationships: reference/relationships.md
+      - Data Lifecycle: reference/data-lifecycle.md
+      - Validation Rules: reference/validation-rules.md
+      - API Conventions: reference/api-conventions.md
+
+copyright: Copyright &copy; 2026 Nexus CMDB
