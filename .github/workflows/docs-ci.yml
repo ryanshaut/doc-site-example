@@ -81,24 +81,7 @@ jobs:
       - name: Run link checker
         uses: lycheeverse/lychee-action@v2.0.2
         with:
-          args: |
-            --verbose
-            --no-progress
-            --accept 200,204,206,301,302,307,308,429
-            --timeout 30
-            --max-retries 3
-            --exclude-mail
-            --exclude "example.com"
-            --exclude "localhost"
-            --exclude "127.0.0.1"
-            --exclude "nexus-cmdb.slack.com"
-            --exclude "docs.nexus-cmdb.io"
-            --exclude "yourapp.com"
-            --exclude "staging-cmdb.example.com"
-            --exclude "api.example.com"
-            --exclude "docs.example.com"
-            --exclude "github.com/example"
-            site/
+          args: --config lychee.toml site/
           fail: true
 
   deploy:

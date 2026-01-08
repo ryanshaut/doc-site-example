@@ -16,10 +16,7 @@ help:
 	@echo "  make serve          - Start local development server"
 	@echo ""
 	@echo "GitHub Actions locally (using act):"
-	@echo "  make act            - Run full workflow with act"
 	@echo "  make act-lint       - Run only lint job with act"
-	@echo "  make act-build      - Run only build job with act"
-	@echo "  make act-link-check - Run only link-check job with act"
 	@echo ""
 	@echo "Setup targets:"
 	@echo "  make install              - Install Python dependencies"
@@ -106,23 +103,7 @@ link-check:
 		echo "[ERROR] lychee not installed. Run: make install-lychee"; \
 		exit 1; \
 	fi; \
-	$$LYCHEE --verbose \
-			--no-progress \
-			--accept 200,204,206,301,302,307,308,429 \
-			--timeout 30 \
-			--max-retries 3 \
-			--exclude-mail \
-			--exclude "example.com" \
-			--exclude "localhost" \
-			--exclude "127.0.0.1" \
-			--exclude "nexus-cmdb.slack.com" \
-			--exclude "docs.nexus-cmdb.io" \
-			--exclude "yourapp.com" \
-			--exclude "staging-cmdb.example.com" \
-			--exclude "api.example.com" \
-			--exclude "docs.example.com" \
-			--exclude "github.com/example" \
-			site/ && echo "[OK] Link checking passed"
+	$$LYCHEE --config lychee.toml site/ && echo "[OK] Link checking passed"
 
 # Run all CI checks in sequence
 check: lint build link-check

@@ -1,0 +1,53 @@
+# Lychee link checker configuration
+# Used by both local Makefile and GitHub Actions workflow
+
+# Cache results to speed up repeated checks
+cache = true
+
+# Maximum number of concurrent network requests
+max_concurrency = 10
+
+# Accepted HTTP status codes
+accept = [200, 204, 206, 301, 302, 307, 308, 429]
+
+# Timeout for each request (in seconds)
+timeout = 30
+
+# Maximum number of retries per request
+max_retries = 3
+
+# Verbose output
+verbose = true
+
+# Don't show progress bar (better for CI)
+no_progress = true
+
+# Exclude email addresses
+exclude_mail = true
+
+# Exclude patterns - URLs that don't exist yet or are placeholders
+exclude = [
+    # Placeholder/example domains
+    "example.com",
+    "yourapp.com",
+    "staging-cmdb.example.com",
+    "api.example.com",
+    "docs.example.com",
+    "github.com/example",
+
+    # Local URLs
+    "localhost",
+    "127.0.0.1",
+
+    # Unpublished/not-yet-live URLs
+    "nexus-cmdb.slack.com",
+    "docs.nexus-cmdb.io",
+    "hub.docker.com/r/nexus/cmdb",
+    "nexus-cmdb.io",
+
+    # Files that don't exist yet
+    "github.com/ryanshaut/doc-site-example/blob/main/CHANGELOG.md",
+
+    # Known false positives
+    "fonts.gstatic.com",
+]
