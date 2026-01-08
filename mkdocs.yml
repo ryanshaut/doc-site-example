@@ -113,6 +113,7 @@ extra:
 
 nav:
   - Home: index.md
+  - How to Use This Site: how-to-use-this-site.md
   - Tutorials:
       - tutorials/index.md
       - Getting Started: tutorials/first-ci.md
