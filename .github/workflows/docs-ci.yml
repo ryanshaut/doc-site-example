@@ -91,6 +91,13 @@ jobs:
             --exclude "example.com"
             --exclude "localhost"
             --exclude "127.0.0.1"
+            --exclude "nexus-cmdb.slack.com"
+            --exclude "docs.nexus-cmdb.io"
+            --exclude "yourapp.com"
+            --exclude "staging-cmdb.example.com"
+            --exclude "api.example.com"
+            --exclude "docs.example.com"
+            --exclude "github.com/example"
             site/
           fail: true
 
