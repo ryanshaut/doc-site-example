@@ -156,7 +156,7 @@ Docker containers, Kubernetes pods.
 
 ## Custom CI Classes
 
-Organizations can define custom CI classes. See [How to Define Custom CI Classes](../how-to/define-custom-ci-class.md).
+Organizations can define custom CI classes beyond the core types described above.
 
 ### Example: Custom Class
 
