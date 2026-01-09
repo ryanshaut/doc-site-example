@@ -112,7 +112,9 @@ extra:
             <a href="https://github.com/ryanshaut/doc-site-example/issues/new" target="_blank" rel="noopener">opening an issue</a>.
 
 nav:
-  - Home: index.md
+  - Home:
+      - index.md
+      - How to Use This Site: how-to-use-this-site.md
   - Tutorials:
       - tutorials/index.md
       - Getting Started: tutorials/first-ci.md

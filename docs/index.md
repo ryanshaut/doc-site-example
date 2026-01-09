@@ -20,6 +20,11 @@ Nexus CMDB helps you:
 
 New to Nexus CMDB? Start here:
 
+!!! tip "New to this documentation?"
+    **Not sure where to start?** Learn how this documentation is organized and how to find what you need quickly.
+
+    [:octicons-arrow-right-24: How to Use This Documentation](how-to-use-this-site.md){ .md-button .md-button--primary }
+
 <div class="grid cards" markdown>
 
 -   :material-school:{ .lg .middle } **Tutorials**
@@ -103,7 +108,7 @@ Full-featured API for automation:
 This documentation follows the [Diátaxis framework](https://diataxis.fr/) to provide different types of content for different needs:
 
 | Section | Purpose | When to Use |
-|---------|---------|-------------|
+| ------- | ------- | ----------- |
 | **Tutorials** | Learning-oriented lessons | You're new and want hands-on practice |
 | **How-To Guides** | Problem-solving recipes | You need to accomplish a specific task |
 | **Discussions** | Understanding-oriented explanations | You want to deepen your knowledge |
