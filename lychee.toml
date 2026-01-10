@@ -32,4 +32,7 @@ exclude = [
 
     # Known false positives
     "fonts.gstatic.com",
+    
+    # Canonical URLs may not be deployed yet during PR checks
+    "ryanshaut.github.io/doc-site-example/how-to-use-this-site",
 ]
