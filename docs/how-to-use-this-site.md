@@ -94,8 +94,8 @@ Use this quick reference to find the right section:
 | Solve a specific problem I'm facing | [How-To Guides](../how-to/) |
 | Understand why something works this way | [Discussions](../discussions/) |
 | Look up API syntax or technical details | [Reference](../reference/) |
-| Get started quickly | [Tutorials → Creating Your First CI](../tutorials/first-ci.md) |
-| Evaluate if Nexus fits my needs | [Discussions → Design Philosophy](../discussions/design-philosophy.md) |
+| Get started quickly | [Tutorials → Creating Your First CI](tutorials/first-ci.md) |
+| Evaluate if Nexus fits my needs | [Discussions → Design Philosophy](discussions/design-philosophy.md) |
 
 ## Following a Learning Path
 
@@ -118,9 +118,9 @@ Traditional documentation often mixes all these types together, making it hard t
 
 If you're not sure where to start:
 
-- **Complete beginner?** → [Creating Your First CI](../tutorials/first-ci.md)
+- **Complete beginner?** → [Creating Your First CI](tutorials/first-ci.md)
 - **Need to solve something now?** → [How-To Guides](../how-to/)
-- **Want the big picture?** → [Design Philosophy](../discussions/design-philosophy.md)
+- **Want the big picture?** → [Design Philosophy](discussions/design-philosophy.md)
 - **Looking for specific information?** → Use the search box at the top of the page
 
 ## Learn More About Diátaxis
