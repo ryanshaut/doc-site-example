@@ -23,7 +23,7 @@ Diátaxis (Greek for "arrangement" or "organization") divides documentation into
 
 **Example**: "Creating Your First CI" walks you through installation and creating your first configuration item.
 
-[:octicons-arrow-right-24: Start learning with Tutorials](../tutorials/)
+[:octicons-arrow-right-24: Start learning with Tutorials](tutorials/)
 
 ---
 
@@ -42,7 +42,7 @@ Diátaxis (Greek for "arrangement" or "organization") divides documentation into
 
 **Example**: "Fixing Duplicate CIs" provides practical steps to identify and resolve duplicate configuration items.
 
-[:octicons-arrow-right-24: Solve problems with How-To Guides](../how-to/)
+[:octicons-arrow-right-24: Solve problems with How-To Guides](how-to/)
 
 ---
 
@@ -61,7 +61,7 @@ Diátaxis (Greek for "arrangement" or "organization") divides documentation into
 
 **Example**: "Why Relationship Modeling Matters" explains the importance of explicit relationships in CMDBs.
 
-[:octicons-arrow-right-24: Deepen understanding with Discussions](../discussions/)
+[:octicons-arrow-right-24: Deepen understanding with Discussions](discussions/)
 
 ---
 
@@ -80,7 +80,7 @@ Diátaxis (Greek for "arrangement" or "organization") divides documentation into
 
 **Example**: "API Conventions" documents all REST API endpoints with parameters and response formats.
 
-[:octicons-arrow-right-24: Look up details in Reference](../reference/)
+[:octicons-arrow-right-24: Look up details in Reference](reference/)
 
 ---
 
@@ -90,10 +90,10 @@ Use this quick reference to find the right section:
 
 | I want to... | Go to... |
 | ------------ | -------- |
-| Learn Nexus CMDB from scratch | [Tutorials](../tutorials/) |
-| Solve a specific problem I'm facing | [How-To Guides](../how-to/) |
-| Understand why something works this way | [Discussions](../discussions/) |
-| Look up API syntax or technical details | [Reference](../reference/) |
+| Learn Nexus CMDB from scratch | [Tutorials](tutorials/) |
+| Solve a specific problem I'm facing | [How-To Guides](how-to/) |
+| Understand why something works this way | [Discussions](discussions/) |
+| Look up API syntax or technical details | [Reference](reference/) |
 | Get started quickly | [Tutorials → Creating Your First CI](tutorials/first-ci.md) |
 | Evaluate if Nexus fits my needs | [Discussions → Design Philosophy](discussions/design-philosophy.md) |
 
@@ -119,7 +119,7 @@ Traditional documentation often mixes all these types together, making it hard t
 If you're not sure where to start:
 
 - **Complete beginner?** → [Creating Your First CI](tutorials/first-ci.md)
-- **Need to solve something now?** → [How-To Guides](../how-to/)
+- **Need to solve something now?** → [How-To Guides](how-to/)
 - **Want the big picture?** → [Design Philosophy](discussions/design-philosophy.md)
 - **Looking for specific information?** → Use the search box at the top of the page
 
